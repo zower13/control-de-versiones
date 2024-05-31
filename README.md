@@ -8,19 +8,18 @@ int main() {
         y = false;
     }
     else {
-        for (int i = 1; i < x * 2; ++i) {
-            if (x % i != 0) {
+        for (int i = 2; i <=x / 2; ++i) {
+            if (x % i == 0) {
                 y= false;
-                break;
+                break;        
             }
         }
     }
 
-    if (x == 1) {
+    if (y == true ) {
         printf("El número %d es primo.", x);
     }
     else {
         printf("El número %d no es primo.", x);
     }
-
 }
